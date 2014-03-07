@@ -11,7 +11,6 @@ describe "beer_on_the_wall" do
   end
 
   it "prints out the lyrics for the rest of the verses" do
-    pending
     run_script("beer_on_the_wall.rb")
     type("8")
 
