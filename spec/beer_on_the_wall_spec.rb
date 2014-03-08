@@ -35,7 +35,6 @@ describe "beer_on_the_wall" do
   end
 
   it "correctly prints out the lyrics for no bottles of beer, when told to sing and there is no more beer left" do
-    pending
     run_script("beer_on_the_wall.rb")
     type("0")
 
