@@ -41,12 +41,17 @@ else
 
 end
 
-v = remainder/5
-print "V"*v
-remainder = remainder%5
-if remainder >=4
-  print "IV"
+if remainder >=9
+  print "IX"
+  remainder = remainder %5
 else
-  i = remainder/1
-  print "I"*i
+  v = remainder/5
+  print "V"*v
+  remainder = remainder%5
+  if remainder >=4
+    print "IV"
+  else
+    i = remainder/1
+    print "I"*i
+  end
 end
