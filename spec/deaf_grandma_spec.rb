@@ -10,7 +10,6 @@ describe "DeafGrandma" do
   end
 
   it "responds with 'NO, NOT SINCE [some year]!' if you shout" do
-    pending
     run_script("deaf_grandma.rb")
     type("HI, GRANDMA")
 
