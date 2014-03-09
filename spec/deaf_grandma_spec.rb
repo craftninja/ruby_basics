@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe "DeafGrandma" do
   it "responds with 'HUH?! SPEAK UP SONNY!'" do
-    pending
     run_script("deaf_grandma.rb")
     type("Hi, Grandma")
 
