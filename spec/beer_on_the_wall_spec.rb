@@ -43,7 +43,6 @@ describe "beer_on_the_wall" do
   end
 
   it "throws an error if it does not know how many number of bottles" do
-    pending
     run_script("beer_on_the_wall.rb")
     type("")
 
