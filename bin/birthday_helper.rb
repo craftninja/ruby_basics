@@ -40,9 +40,9 @@ name = gets.chomp
 
 i=0
 while i<numpeeps
-  if name == person[i]["first_name"]
+  if name == person[i]["first_name"] || name == person[i]["last_name"]
     age = time.year-person[i]["date_of_birth"].byteslice(0..3).to_i
-    puts "#{Date.parse(person[i]["date_of_birth"]).strftime("%B%e, %Y")}, #{age.to_s} years old"
+    puts "#{Date.parse(person[i]["date_of_birth"]).strftime("%B %-d, %Y")}, #{age.to_s} years old"
   end
   i+=1
 end
