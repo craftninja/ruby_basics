@@ -1,15 +1,3 @@
-#IO.foreach("/Users/emilyplatzer/gSchoolWork/ruby_basics/bin/birthday_data.csv") {|x| print  x }
-=begin
-Write a program that helps users find the birth date and age of a person. The program should:
-
-Prompt the user for a name
-Print that person's name and birth date and age based on the data in bin/birthday_data.csv
-Skills
-
-Converting a String to a Date
-Printing a date in a friendly format
-Reading and parsing data from a file
-=end
 require 'date'
 
 data = IO.readlines("/Users/emilyplatzer/gSchoolWork/ruby_basics/bin/birthday_data.csv")
@@ -40,7 +28,7 @@ name = gets.chomp
 
 i=0
 while i<numpeeps
-  if name == person[i]["first_name"] || name == person[i]["last_name"]
+  if name == person[i]["first_name"] || name == person[i]["last_name"] || name == person[i]["first_name"] +" "+person[i]["last_name"]
     age = time.year-person[i]["date_of_birth"].byteslice(0..3).to_i
     puts "#{Date.parse(person[i]["date_of_birth"]).strftime("%B %-d, %Y")}, #{age.to_s} years old"
   end
